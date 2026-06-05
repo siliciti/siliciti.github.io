@@ -10,20 +10,23 @@
     <meta name="keywords" content="Website Creation Bangalore, Graphic Designing Nagarbhavi, Digital Marketing Services, IT Managed Services, Web Design SiliCiti, Logo Design, PPC Ads">
     <meta name="author" content="SiliCiti Technologies">
     <link rel="canonical" href="https://siliciti.com/">
-
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <!-- Open Graph / Facebook Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://siliciti.com/">
     <meta property="og:title" content="SiliCiti Technologies | One-Stop Digital & IT Solutions">
     <meta property="og:description" content="Get professional websites, stunning graphics, ROI-driven marketing, and reliable IT support under one roof. Contact us today.">
-    <meta property="og:image" content="https://siliciti.com/assets/og-image.jpg">
+    <meta property="og:image" content="https://siliciti.com/assets/images/og-image.jpg">
 
     <!-- Twitter Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://siliciti.com/">
     <meta name="twitter:title" content="SiliCiti Technologies | Complete Digital & IT Support">
     <meta name="twitter:description" content="From scratch planning to final execution of your business website, branding, and digital growth.">
-    <meta name="twitter:image" content="https://siliciti.com/assets/og-image.jpg">
+    <meta name="twitter:image" content="https://siliciti.com/assets/images/og-image.jpg">
 
     <!-- Google Fonts: Import Product Sans / Google Sans style securely -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap">
@@ -38,7 +41,7 @@
           "@id": "https://siliciti.com/#organization",
           "name": "SiliCiti Technologies",
           "url": "https://siliciti.com/",
-          "logo": "https://siliciti.com/assets/logo.png",
+          "logo": "https://siliciti.com/assets/images/logo.png",
           "telephone": "+919886267815",
           "email": "contact@siliciti.com",
           "priceRange": "$$",
@@ -98,7 +101,7 @@
               "@type": "Review",
               "author": {
                 "@type": "Person",
-                "name": "kumar hanumaiah"
+                "name": "Kumar Hanumaiah"
               },
               "reviewBody": "Their help with ads was a huge success. I got more customers as promised. Vijay delivered exceptional results.",
               "reviewRating": {
@@ -174,6 +177,20 @@
         .rating-badge-top span {
             color: var(--text-main);
             font-weight: 400;
+        }
+
+        /* Responsive Full-Screen Banner Styling */
+        .responsive-banner {
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .responsive-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         /* Hero Folder */
@@ -471,11 +488,21 @@
 <body>
 
     <header>
-        <div class="logo">SiliCiti Technologies</div>
+        <div class="logo"><img src="assets/images/siliciti-logo.webp" title="SiliCiti Technologies" width="70" /></div>
         <div class="rating-badge-top">
-            ★ 5.0 <span>(Verified Google Reviews)</span>
+            ★ 5.0 <span>(Rated)</span>
         </div>
     </header>
+
+    <!-- NEW CONTENT: Smart Switchable Full-Screen Banner -->
+    <div class="responsive-banner">
+        <picture>
+            <!-- Displays when device orientation is portrait (e.g., mobile phones) -->
+            <source media="(orientation: portrait)" srcset="/assets/images/banner-p.webp">
+            <!-- Default landscape image (desktop, laptops, turned tablets) -->
+            <img src="/assets/images/banner-l.webp" alt="SiliCiti Technologies Digital Banner" loading="eager">
+        </picture>
+    </div>
 
     <!-- First Folder: Hero Section -->
     <main class="hero">
@@ -494,7 +521,7 @@
         <div class="reviews-container">
             <div class="reviews-header">
                 <h2>What Our Customers Say</h2>
-                <div class="stars-summary">★ 5.0 <span>Google Ratings</span></div>
+                <div class="stars-summary">★ 5.0 <span>Verified Google Ratings</span></div>
             </div>
 
             <div class="slider-wrapper">
@@ -506,7 +533,7 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="review-slide">
-                    <div class="rev-author">kumar hanumaiah</div>
+                    <div class="rev-author">Kumar Hanumaiah</div>
                     <div class="rev-stars">★★★★★</div>
                     <p class="rev-text">"Their help with ads was a huge success. I got more customers as promised. I have tried other options, but Vijay delivered exceptional results."</p>
                 </div>
@@ -536,7 +563,7 @@
                 </div>
                 <!-- Slide 7 -->
                 <div class="review-slide">
-                    <div class="rev-author">SOWMYA SHREE</div>
+                    <div class="rev-author">Sowmya Shree</div>
                     <div class="rev-stars">★★★★★</div>
                     <p class="rev-text">"Very impressive brochure design... Great job..."</p>
                 </div>
