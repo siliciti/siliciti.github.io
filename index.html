@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SiliCiti Technologies | Website Creation, Graphic Designing, Digital Marketing Bangalore</title>
-    
     <!-- Standard SEO Tags -->
     <meta name="description" content="SiliCiti Technologies in Nagarbhavi, Bangalore offers website creation, graphic design, digital marketing, and IT managed services from planning to execution.">
     <meta name="keywords" content="Website Creation Bangalore, Graphic Designing Nagarbhavi, Digital Marketing Services, IT Managed Services, Web Design SiliCiti, Logo Design, PPC Ads">
@@ -20,17 +19,15 @@
     <meta property="og:title" content="SiliCiti Technologies | One-Stop Digital & IT Solutions">
     <meta property="og:description" content="Get professional websites, stunning graphics, ROI-driven marketing, and reliable IT support under one roof. Contact us today.">
     <meta property="og:image" content="https://siliciti.com/assets/images/og-image.jpg">
-
     <!-- Twitter Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://siliciti.com/">
     <meta name="twitter:title" content="SiliCiti Technologies | Complete Digital & IT Support">
     <meta name="twitter:description" content="From scratch planning to final execution of your business website, branding, and digital growth.">
     <meta name="twitter:image" content="https://siliciti.com/assets/images/og-image.jpg">
-
-    <!-- Google Fonts: Import Product Sans / Google Sans style securely -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;700&display=swap">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap" rel="stylesheet">
     <!-- Structured Data: Local Business, Verified Reviews & Search Snippets -->
     <script type="application/ld+json">
     {
@@ -142,10 +139,12 @@
         }
 
         body {
-            font-family: 'Product Sans', 'Google Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Google Sans Flex', sans-serif, -apple-system, BlinkMacSystemFont, sans-serif;
             color: var(--text-main);
             background-color: #ffffff;
             line-height: 1.6;
+            font-weight: 300;
+            font-variation-settings:"slnt" 0,"wdth" 100,"GRAD" 0,"ROND" 0;
         }
 
         header {
@@ -162,7 +161,7 @@
 
         .logo {
             font-size: 1.5rem;
-            font-weight: 700;
+            font-weight: 300;
             color: var(--text-dark);
         }
 
@@ -170,13 +169,13 @@
             display: flex;
             align-items: center;
             gap: 0.25rem;
-            font-weight: 700;
+            font-weight: 300;
             color: #fbbc05;
             font-size: 0.95rem;
         }
         .rating-badge-top span {
             color: var(--text-main);
-            font-weight: 400;
+            font-weight: 300;
         }
 
         /* Responsive Full-Screen Banner Styling */
@@ -206,7 +205,7 @@
             color: var(--text-dark);
             line-height: 1.25;
             margin-bottom: 1.5rem;
-            font-weight: 700;
+            font-weight: 300;
             letter-spacing: -0.5px;
         }
 
@@ -232,7 +231,7 @@
             justify-content: center;
             padding: 0.85rem 2.25rem;
             font-size: 1.1rem;
-            font-weight: 700;
+            font-weight: 300;
             text-decoration: none;
             border-radius: 8px;
             transition: opacity 0.2s, transform 0.1s;
@@ -273,17 +272,18 @@
             font-size: 1.8rem;
             color: var(--text-dark);
             margin-bottom: 0.25rem;
+            font-weight: 300;
         }
 
         .stars-summary {
             color: #fbbc05;
-            font-weight: 700;
+            font-weight: 300;
             margin-bottom: 2rem;
             font-size: 1.1rem;
         }
         .stars-summary span {
             color: var(--text-main);
-            font-weight: 400;
+            font-weight: 300;
         }
 
         .slider-wrapper {
@@ -313,7 +313,7 @@
         }
 
         .rev-author {
-            font-weight: 700;
+            font-weight: 300;
             color: var(--text-dark);
             font-size: 1.1rem;
             margin-bottom: 0.25rem;
@@ -343,7 +343,7 @@
             font-size: 2.2rem;
             color: var(--text-dark);
             margin-bottom: 3.5rem;
-            font-weight: 700;
+            font-weight: 300;
         }
 
         .services-grid {
@@ -368,7 +368,7 @@
             font-size: 1.3rem;
             color: var(--text-dark);
             margin-bottom: 1rem;
-            font-weight: 700;
+            font-weight: 300;
             border-bottom: 2px solid var(--primary);
             padding-bottom: 0.5rem;
             display: inline-block;
@@ -414,7 +414,7 @@
 
         .contact-details p {
             font-size: 1.1rem;
-            font-weight: 700;
+            font-weight: 300;
             color: var(--text-dark);
             margin-bottom: 0.5rem;
         }
@@ -488,7 +488,19 @@
 <body>
 
     <header>
-        <div class="logo"><img src="assets/images/siliciti-logo.webp" title="SiliCiti Technologies" width="70" /></div>
+        <div class="logo">
+        <img 
+          src="assets/images/siliciti-logo.webp"
+          srcset="
+            assets/images/siliciti-logo.webp 1x,
+            assets/images/siliciti-logo@2x.webp 2x"
+          alt="SiliCiti Technologies"
+          width="70"
+          height="47"
+          loading="eager"
+          decoding="async"
+        />
+        </div>
         <div class="rating-badge-top">
             ★ 5.0 <span>(Rated)</span>
         </div>
@@ -496,12 +508,41 @@
 
     <!-- NEW CONTENT: Smart Switchable Full-Screen Banner -->
     <div class="responsive-banner">
-        <picture>
-            <!-- Displays when device orientation is portrait (e.g., mobile phones) -->
-            <source media="(orientation: portrait)" srcset="/assets/images/banner-p.webp">
-            <!-- Default landscape image (desktop, laptops, turned tablets) -->
-            <img src="/assets/images/banner-l.webp" alt="SiliCiti Technologies Digital Banner" loading="eager">
-        </picture>
+<picture>
+  <!-- Portrait (mobile full screen) -->
+  <source 
+    media="(orientation: portrait)" 
+    srcset="
+      /assets/images/banner-p-360.webp 360w,
+      /assets/images/banner-p-720.webp 720w,
+      /assets/images/banner-p-1080.webp 1080w"
+    sizes="100vw"
+  >
+
+  <!-- Landscape (desktop full width hero) -->
+  <source 
+    media="(orientation: landscape)" 
+    srcset="
+      /assets/images/banner-l-800.webp 800w,
+      /assets/images/banner-l-1200.webp 1200w,
+      /assets/images/banner-l-1600.webp 1600w,
+      /assets/images/banner-l-1920.webp 1920w"
+    sizes="100vw"
+  >
+
+  <!-- Fallback -->
+  <img 
+    src="/assets/images/banner-l-1200.webp"
+    alt="SiliCiti Technologies Digital Banner"
+
+    width="1920"
+    height="1080"
+
+    fetchpriority="high"
+    loading="eager"
+    decoding="async"
+  >
+</picture>
     </div>
 
     <!-- First Folder: Hero Section -->
